@@ -1,0 +1,144 @@
+
+.div1{
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    column-gap: 10px;
+   flex-wrap: nowrap;
+  
+}
+
+input{
+    text-align: center;
+    background-color: sandybrown;
+    font-size: 2rem;
+    width: 20%;
+    height: 15vh;
+}
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    color: goldenrod;
+}
+
+.green{
+    /* background-color: green; */
+    animation: change 1s ease-in-out  1 ;
+    background-color: green;
+}
+
+.red{
+    animation: change2 1s ease-in-out  1 ;
+    background-color: red;
+}
+@keyframes change{
+    from {background-color: goldenrod;}
+    to {background-color: green;}
+  }
+
+  @keyframes change2{
+    from {background-color: goldenrod;}
+    to {background-color: red;}
+  }
+
+@media screen and (max-width: 1000px) {
+    body{
+        background-color: black;
+    }
+
+
+   
+    .div1{
+        display: flex;
+        width: 100%;
+       
+        column-gap: 10px;
+        margin-top: 30px;
+       flex-wrap: nowrap;
+
+    }
+    
+    input{
+        text-align: center;
+        background-color: hotpink;
+        font-size: 2rem;
+        width: 20%;
+        height: 10vh;
+    }
+    
+    h1{
+        text-align: center;
+        color: goldenrod;
+    }
+    
+    .green{
+        animation: change 1s ease-in-out  1 ;
+    }
+    
+    .red{
+        animation: change2 1s ease-in-out  1 ;
+    }
+    @keyframes change{
+        from {background-color: hotpink;}
+        to {background-color: green;}
+      }
+
+      @keyframes change2{
+        from {background-color: hotpink;}
+        to {background-color: red;}
+      }
+}
+
+@media screen and (max-width: 530px) {
+    body{
+       background-color: black;
+    }
+
+
+   
+    .div1{
+        display: flex;
+        width: 100%;
+        margin-top: 50px;
+     
+        column-gap: 10px;
+       flex-wrap: nowrap;
+
+      
+    }
+    
+    input{
+        text-align: center;
+        background-color: blue;
+        font-size: 2rem;
+        width: 30%;
+        height: 8vh;
+    }
+   
+    h1{
+        text-align: center;
+        color: goldenrod;
+    }
+    
+    .green{
+        animation: change 1s ease-in-out  1 ;
+    }
+    
+    .red{
+        animation: change2 1s ease-in-out  1 ;
+    }
+    @keyframes change{
+        from {background-color: darkblue;}
+        to {background-color: green;}
+      }
+
+      @keyframes change2{
+        from {background-color: darkblue;}
+        to {background-color: red;}
+      }
+}
