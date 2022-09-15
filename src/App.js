@@ -10,8 +10,8 @@ const [fourth,setFourth]=useState('');
 const [fifth,setFifth]=useState('');
 // const [count,setCount]=useState(0);
 var count=0;
-const Word="Hello";
-const word="hello";
+const Word="BRING";
+const word="bring";
 
 
 const EnterClicked=(event)=>{
@@ -25,6 +25,9 @@ if(event.key=="Enter"){
 
     // console.log('yes');
   }
+  else if(Word.indexOf(first)!=-1||word.indexOf(first)!=-1){
+    document.getElementById('f'+name).classList.add('orange');
+  }
   else{
     document.getElementById('f'+name).classList.add('red');
   }
@@ -35,6 +38,9 @@ if(event.key=="Enter"){
     count++;
     // console.log('yes');
   }
+  else if(Word.indexOf(second)!=-1||word.indexOf(second)!=-1){
+    document.getElementById('s'+name).classList.add('orange');
+  }
   else{
     document.getElementById('s'+name).classList.add('red');
   }
@@ -43,6 +49,9 @@ if(event.key=="Enter"){
     document.getElementById('t'+name).classList.add('green');
     count++;
     // console.log('yes');
+  }
+  else if(Word.indexOf(third)!=-1||word.indexOf(third)!=-1){
+    document.getElementById('t'+name).classList.add('orange');
   }
   else{
     document.getElementById('t'+name).classList.add('red');
@@ -53,6 +62,9 @@ if(event.key=="Enter"){
     count++;
     // console.log('yes');
   }
+  else if(Word.indexOf(fourth)!=-1||word.indexOf(fourth)!=-1){
+    document.getElementById('fo'+name).classList.add('orange');
+  }
   else{
     document.getElementById('fo'+name).classList.add('red');
   }
@@ -61,6 +73,9 @@ if(event.key=="Enter"){
     document.getElementById('fi'+name).classList.add('green');
     count++;
     // console.log('yes');
+  }
+  else if(Word.indexOf(fifth)!=-1||word.indexOf(fifth)!=-1){
+    document.getElementById('fi'+name).classList.add('orange');
   }
   else{
     document.getElementById('fi'+name).classList.add('red');
