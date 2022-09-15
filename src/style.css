@@ -36,6 +36,14 @@ h1{
     animation: change2 1s ease-in-out  1 ;
     background-color: red;
 }
+.orange{
+    animation: change3 1s ease-in-out  1 ;
+    background-color: orange;
+}
+@keyframes change3{
+    from {background-color: goldenrod;}
+    to {background-color: orange;}
+  }
 @keyframes change{
     from {background-color: goldenrod;}
     to {background-color: green;}
@@ -83,6 +91,15 @@ h1{
     .red{
         animation: change2 1s ease-in-out  1 ;
     }
+
+    .orange{
+        animation: change3 1s ease-in-out  1 ;
+    }
+
+    @keyframes change3{
+        from {background-color: hotpink;}
+        to {background-color: orange;}
+      }
     @keyframes change{
         from {background-color: hotpink;}
         to {background-color: green;}
@@ -132,6 +149,15 @@ h1{
     .red{
         animation: change2 1s ease-in-out  1 ;
     }
+
+    .orange{
+        animation: change3 1s ease-in-out  1 ;
+    }
+
+    @keyframes change3{
+        from {background-color: darkblue;}
+        to {background-color: orange;}
+      }
     @keyframes change{
         from {background-color: darkblue;}
         to {background-color: green;}
